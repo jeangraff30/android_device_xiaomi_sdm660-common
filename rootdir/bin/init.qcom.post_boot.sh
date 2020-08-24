@@ -105,6 +105,8 @@ else
     echo 3 > /proc/sys/kernel/sched_ravg_hist_size
 fi
 
+#Display saturation config
+    echo 258 > /sys/devices/platform/kcal_ctrl.0/kcal_sat
 
 # Disable wsf for all targets beacause we are using efk.
 # wsf Range : 1..1000 So set to bare minimum value 1.
